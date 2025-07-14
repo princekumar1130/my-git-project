@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GrowSwap - Plant Exchange</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f0fdf4, #e6fffa);
+      margin: 0;
+      padding: 0;
+      color: #2f855a;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+      background-color: #c6f6d5;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #22543d;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #2f855a;
+    }
+
+    .card input,
+    .card textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #cbd5e0;
+      border-radius: 8px;
+    }
+
+    .card button {
+      background-color: #38a169;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      width: 100%;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .card button:hover {
+      background-color: #2f855a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #f0fff4;
+      font-size: 0.9rem;
+      color: #22543d;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌱 GrowSwap</h1>
+    <p>Give a Plant, Take a Plant – Connect with Green Lovers Nearby</p>
+  </header>
+
+  <main>
+    <!-- Offer a Plant -->
+    <div class="card">
+      <h2>🌿 Offer a Plant</h2>
+      <input type="text" placeholder="Plant Name (e.g., Money Plant)" />
+      <textarea rows="4" placeholder="Describe your plant, care tips, etc."></textarea>
+      <input type="file" />
+      <button>Share Offer</button>
+    </div>
+
+    <!-- Request a Plant -->
+    <div class="card">
+      <h2>📍 Request a Plant</h2>
+      <input type="text" placeholder="Which plant do you want?" />
+      <textarea rows="4" placeholder="Why do you want it? Any notes for the giver"></textarea>
+      <button>Post Request</button>
+    </div>
+  </main>
+
+  <footer>
+    🌿 Built for plant lovers, by plant lovers. Join the Green Movement! 🌿
+  </footer>
+
+</body>
+</html>
